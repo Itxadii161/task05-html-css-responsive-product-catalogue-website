@@ -95,6 +95,42 @@ input{
     text-align: center;
     font-size: 28px;
 }
+/* Mobile or Smart Phone Section */
+#mob-heading{
+    margin-top: 60px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.mobiles{
+    display: grid;
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    justify-content: space-around;
+}
+.mobiles div{
+    display: grid;
+    justify-items: center;
+    border-radius: 5px;
+    background-color: #efefef;
+    border: 1px solid gainsboro;
+    text-align: center;
+    margin: 10px 0;
+}
+.mobiles div img{
+    width: 67%;
+    border-radius: 5px;
+    margin: 10px ;
+    background-color: transparent;
+}
+.mobiles span p{
+    padding: 3px;
+    font-size: small;
+}
+.mobiles span p:first-child{
+    font-weight: bold;
+}
+.mobiles:hover{
+
+}
 
  /* small size (1000-width) */
 @media(max-width:1000px) {
@@ -127,11 +163,35 @@ input{
 
     .bg-image h2{
         font-size: 22px;
-    }
+     }
      /* .bg-image img{width: 45%;} */
+
+      /* Mobile or Smart Phone Section */
+    
+      #mob-heading{
+        margin-top: 80px;
+        margin-bottom: 10px;
+        padding: 10px 20px;
+    }
+    .mobiles{
+        grid-template-columns: 30% 30% 30%;
+        justify-content: space-around;
+    }
+    .mobiles div{
+        margin: 10px;
+        border: 1px solid #efefef;
+    }
+    .mobiles div img{
+        height: 90%;
+        width: 90%;
+    }
+    .mobiles span p{
+        font-size: medium;
+    }
+
 } 
 
-/* for mobile */
+/* for mobile screen */
 
 @media(max-width:400px){
     /*Navagation  */
@@ -197,4 +257,26 @@ input{
             font-size: 10px;
         }
          /* .bg-image img{} */
+        
+         /* Mobile or Smart Phone Section */
+    
+      #mob-heading{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 3.5vh;
+        padding: 0px 20px;
     }
+    .mobiles{
+        grid-template-columns: 50% 50%;
+        justify-content: space-around;
+    }
+    .mobiles div{
+        width: 90%;
+        height: auto;
+    }
+    .mobiles div img{
+        width: 75%;
+        height: 75%;
+        margin-top: 20px;
+    }
+}
