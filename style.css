@@ -156,8 +156,7 @@ input{
     width: 80%;
 }
 .notify{
-    color: #fff;
-    background-color: #00000078;
+    color: #ffffff;
     width: 90px;
     height: 40px;
     padding: 0;
@@ -174,7 +173,50 @@ input{
     padding-top: 5px;
     padding-bottom: 15px;
 }
-
+/* Smart Watches */
+#watch-heading{
+    margin-top: 80px;
+    margin-left: 10px;
+    padding: 10px 20px;
+}
+.s-wtch{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+}
+.s-wtch div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #91b5d3;
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+    padding: 10px 50px;
+    box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
+}
+.s-wtch div img{
+    width: 40%;
+}
+.s-wtch p{
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(71,73,186,0.804);
+}
+footer{
+    text-align: center;
+    background-color: #91b5d3;
+    padding-top: 10px;
+    font-size: xx-large;
+    padding-right: 10px;
+}
+.all-right{
+    text-align: center;
+    background-color: #91b5d3;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: black;
+}
 
  /* small size (1000-width) */
 @media(max-width:1000px) {
@@ -226,8 +268,8 @@ input{
         border: 1px solid #efefef;
     }
     .mobiles div img{
-        height: 90%;
-        width: 90%;
+        
+        width: 70%;
     }
     .mobiles span p{
         font-size: medium;
@@ -242,12 +284,33 @@ input{
     margin-bottom: 10px;
 }
 .laptop div img{
-    width: ;
-    height: ;
     background-color: transparent;
     border-radius: 5px;
     margin: 10px;
     margin-bottom: 5px;
+    width: 80%;
+}
+/* Smart Watches */
+.s-wtch{
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-around;
+}
+.s-wtch div{
+    display: grid;
+    justify-content: space-around;
+    justify-items: center;
+    width: 100%;
+    height: 90%;
+    padding: 10px 10px;
+}
+.s-wtch div img{
+    width: 55%;
+}
+.s-wtch p{
+    text-align: center;
+    font-size: 15px;
+
 }
 
 } 
@@ -340,4 +403,75 @@ input{
         height: 75%;
         margin-top: 20px;
     }
+    /* laptop section */
+    #laptop-heading{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        padding: 20px 20px;
+        font-size: 3.5vh;
+    }
+    .laptop{
+        display: grid;
+        grid-template-columns: 80%;
+        justify-content: space-around;
+    }
+    .laptop .notify{
+        width: 80px;
+        height: 20px;
+    }
+    .laptop .notify p{
+        padding-top: 3px;
+        font-family: 2.3vh;
+    }
+    .laptop h4{
+        font-size: 2.3vh;
+        padding-top: 3px;
+        padding-bottom: 10px;
+    }
+    /* Smart Watches */
+#watch-heading{
+    margin-top: 30px;
+    margin-left: 0px;
+    padding: 20px 20px;
+    font-size: 3.5vh;
+}
+.s-wtch{
+    display: grid;
+    grid-template-columns: 80%;
+    justify-content: space-around;
+    margin-left: ;
+}
+.s-wtch div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #91b5d3;
+    width: 260px;
+    height: 250px;
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    box-shadow: rgba(0,0,0,0.43) 0px 5px 10px;
+}
+.s-wtch div img{
+    width: 60%; 
+}
+.s-wtch p{
+    font-size: 2vh;
+}
+footer{
+    text-align: center;
+    background-color: #91b5d3;
+    padding-top: 10px;
+    font-size: large;
+    padding-right: 10px;
+    margin-top: 30px;
+}
+.all-right{
+    text-align: center;
+    background-color: #91b5d3;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: black;
+    font-size: medium;
+}
 }
